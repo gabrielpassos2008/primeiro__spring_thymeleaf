@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cadastro de Tarefa</title>
 </head>
+
 <body>
-    <h1>erick da a bundinha</h1>
+    <h1>Meu primeiro Spring usando o thymeleaf!</h1>
+    <form class="container" method="post" action="/create">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nome da Tarefa</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Data da terafa</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" name="date" th:field="*{}">
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </form>
 </body>
+
 </html>
