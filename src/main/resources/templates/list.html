@@ -11,8 +11,21 @@
 </head>
 
 <body>
-    <h1>Lista das Tarefas Cadastradas.</h1>
-    <table class="table container" >
+    <ul class="nav nav-tabs justify-content-sm-center">
+        <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/create" >Cadastrar Tarefa</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="/list" aria-current="page">Listar Tarefa</a>
+        </li>
+    </ul>
+
+
+    <h1 class="display-4 fw-bold text-body-emphasis fs-2 pt-2">Lista das Tarefas Cadastradas.</h1>
+    <table class="table container">
         <thead>
             <tr>
                 <th scope="col">#</th>
